@@ -1,5 +1,5 @@
 <script>
-    import SafeInput from '../../../js/klyric/src/SafeInput.svelte';
+    import SafeInput from './ext/SafeInput.svelte';
     import PadSpace from './lib/PadSpace.svelte';
     import Keyboard from './lib/Keyboard.svelte';
     import Button from './ext/Button.svelte';
