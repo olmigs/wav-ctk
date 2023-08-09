@@ -1,0 +1,26 @@
+[package]
+name = "wav-ctk"
+version = "0.0.0"
+description = "A Tauri App - either for recipes of CTK-4400 support"
+authors = ["Miguel D. Guerrero <migs@mdguerrero.com>"]
+license = ""
+repository = ""
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1.2", features = [] }
+
+[dependencies]
+cooklang = { path = "../../git/cooklang-rs", features = ["bundled_units"] }
+log = "^0.4"
+tauri = { version = "1.2", features = [ "updater", "dialog-all", "path-all", "process-command-api", "shell-open"] }
+tauri-plugin-log = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v1" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[features]
+# this feature is used for production builds or when `devPath` points to the filesystem
+# DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]
