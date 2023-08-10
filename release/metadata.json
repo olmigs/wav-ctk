@@ -1,0 +1,19 @@
+{
+    "version": "v0.0.0",
+    "notes": "Initial debugging release (MVP) Tauri@v1.2",
+    "pub_date": "2023-08-10T00:46:02.046Z",
+    "platforms": {
+        "darwin-x86_64": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTNmV2MrckxyS2VBclR6b1dxUGh2V1NXTGJKa2N4ajJ1bnBmQWQvdW1zSUZmeVBuODZPSjZPaXFPb05FWHI5VEk2S2ljNHEvZ1FSMnpkQUY2MEpxUmVIUkdwS2Y0cFFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjkxNjI2NzQ0CWZpbGU6V2F2ZSBDVEsuYXBwLnRhci5negorK1BKZWZ4TWIzQVRBREYvYmxvK012aGJHczFZZXpUR3VZdzQ5UVZ2Wm9jNTgrSGJpUys5WkIyUi8wOHdjVzhUeDk3VCt6TGZaQU9Ca0FtcDhGcDFCZz09Cg==",
+            "url": "https://github.com/olmigs/wav-ctk/raw/main/release/download/v0.0.0/Wave CTK.app.tar.gz"
+        },
+        "darwin-aarch64": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTNmV2MrckxyS2RpVjN4NkIzL2krbHFUK25Vb0dwQUo0SVZlMUdFQTQxdzZtQ01SMmFkWm9XRTBIS2NvRnRZTFBwd2k0eTZJYitUcmlLN08rdWRsMmxqTTNROE9ISUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjkxNjI0MDEwCWZpbGU6V2F2ZSBDVEsuYXBwLnRhci5negpUdktIWDhPN3d6WDM0aFJJMnZObU04c2dvZUxSU1NFUk13cEVTdU5mRERiK2ZHRFRwVGFuejczQmtxTldIWFdkOGxMWXN3U3EyMlpKTWdnS2I2eGdCQT09Cg==",
+            "url": "https://github.com/olmigs/wav-ctk/raw/main/release/download/v0.0.0/silicon/Wave CTK.app.tar.gz"
+        },
+        "windows-x86_64": {
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTNmV2MrckxyS2Vrc3pSbmhIUUw0VWZhdjQzbFk0bkVSUGdzWjZoZmZGWis1V0kzQTcyUCtqUFpKVVpVUnlaZVc1NURYYXAxcDkrWEZudnJGaUpyK25wY2pBMzhISFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjkxNjI2ODI5CWZpbGU6V2F2ZSBDVEtfMC4wLjBfeDY0X2VuLVVTLm1zaS56aXAKWHpzVlVvZlZpT0FmTHJXNnR5WnFmcEl5cTduRjI1STBPMWhoL0NUd3gyQUZWU3JmamdCTGNwRUVVanFlQ3RMQ0V4NDdheWRPL0VFaFNIL2xidkN0Qnc9PQo=",
+            "url": "https://github.com/olmigs/wav-ctk/raw/main/release/download/v0.0.0/Wave CTK_0.0.0_x64_en-US.msi.zip"
+        }
+    }
+}
