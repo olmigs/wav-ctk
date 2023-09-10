@@ -16,10 +16,17 @@ fn write_json(json: &str, path: &str) -> Result<String, String> {
     let mut file_path = PathBuf::new();
     file_path.push(path);
     file_path.push(file_name);
-    println!("attempting write to: {:#?}", file_path);
+    trace!("attempting write to: {:#?}", file_path);
+    // let mut perms = fs::metadata(&file_path)
+    //     .map_err(|e| e.to_string())?
+    //     .permissions();
+    // if perms.readonly() == true {
+    //     perms.set_readonly(false);
+    //     fs::set_permissions(&file_path, perms).map_err(|e| e.to_string())?;
+    // }
     let mut file = std::fs::File::create(&file_path).map_err(|e| e.to_string())?;
     file.write_all(json.as_bytes()).map_err(|e| e.to_string())?;
-    println!("WROTE TO: {:#?}", file_path);
+    trace!("WROTE TO: {:#?}", file_path);
     Ok("Invoked successfully".into())
 }
 
@@ -32,7 +39,7 @@ async fn exec_wtd(path: &str, name: &str, out: &str) -> Result<String, String> {
     let mut out_path = PathBuf::new();
     out_path.push(out);
     out_path.push(name);
-    println!(
+    trace!(
         "attempting write to: {:#?}",
         &out_path.as_os_str().to_str().unwrap().to_string()
     );
@@ -51,7 +58,7 @@ async fn exec_wtd(path: &str, name: &str, out: &str) -> Result<String, String> {
         }
         if let CommandEvent::Stderr(line) = &event {
             if line.contains("Exception:") {
-                // error!("{}", line);
+                // error!("{}", line); // migstodo: needed?
                 return Err(line.into());
             }
         }
@@ -110,15 +117,22 @@ fn file_stat(filename: &str) -> Result<String, String> {
 
 fn main() {
     tauri::Builder::default()
-        // .setup(|app| {
-        //     let package_info = app.package_info();
-        //     let resource_dir =
-        //         path::resource_dir(package_info, &app.env()).expect("resources not found");
-        //     let mut data_dir = path::data_dir().expect("data not found");
-        //     let resource_str =
-        //         String::from(resource_dir.clone().to_str().expect("couldn't to_str"));
-        //     Ok(())
-        // })
+        .setup(|app| {
+            // let package_info = app.package_info();
+            // let resource_dir =
+            //     path::resource_dir(package_info, &app.env()).expect("resources not found");
+            // let mut data_dir = path::data_dir().expect("data not found");
+            // let resource_str =
+            //     String::from(resource_dir.clone().to_str().expect("couldn't to_str"));
+
+            // create app local data
+            let app_local_data_path = app
+                .path_resolver()
+                .app_local_data_dir()
+                .expect("failed to resolve app local data dir");
+            fs::create_dir_all(app_local_data_path).map_err(|e| e.to_string())?;
+            Ok(())
+        })
         .invoke_handler(tauri::generate_handler![exec_wtd, file_stat, write_json])
         .plugin(
             tauri_plugin_log::Builder::default()

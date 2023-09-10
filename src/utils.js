@@ -12,6 +12,14 @@ export async function startLogging() {
     return await attachConsole();
 }
 
+export function logError(err, locName = null) {
+    // console.error(err);
+    if (locName) {
+        console.warn(`error incoming from ${locName}`);
+    }
+    error(err);
+}
+
 const defaultInDir = await getInputFilepath();
 const defaultOutDir = await getOutputFilepath();
 
@@ -37,10 +45,10 @@ export function openDialogForSlot(_event, slot, dir = defaultInDir) {
                         let stat = JSON.parse(statStr);
                         console.log(prettyBytes(stat.size));
                     })
-                    .catch((err) => console.error(err));
+                    .catch((err) => logError(err));
             }
         })
-        .catch((err) => console.error(err));
+        .catch((err) => logError(err));
 }
 
 export function openDialogForOutput(_event, dir = defaultOutDir) {
@@ -61,7 +69,7 @@ export function openDialogForOutput(_event, dir = defaultOutDir) {
                 set_outputFilepath(outputPath);
             }
         })
-        .catch((err) => console.error(err));
+        .catch((err) => logError(err));
 }
 
 export function writeJson(json) {
@@ -71,7 +79,7 @@ export function writeJson(json) {
 export function convertBytes(bytes) {}
 
 export function outputJson(json, name) {
-    path.resourceDir().then((dir) => {
+    path.appLocalDataDir().then((dir) => {
         invoke('write_json', { json: JSON.stringify(json), path: dir })
             .then((out_write_json) => {
                 console.log(out_write_json);
@@ -80,16 +88,16 @@ export function outputJson(json, name) {
                         console.log(out_exec_ctk);
                     })
                     .catch((err) => {
-                        console.error(err);
+                        logError(err, 'exec_wtd');
                         alert(err);
                     });
             })
-            .catch((err) => console.error(err));
+            .catch((err) => logError(err, 'write_json'));
     });
 }
 
 export function execDTW(input, output) {
     invoke('exec_dtw', { input_file: input, output_path: output })
         .then((res) => console.log(res))
-        .catch((err) => console.error(err));
+        .catch((err) => logError(err));
 }

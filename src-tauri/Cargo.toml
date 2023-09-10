@@ -1,6 +1,6 @@
 [package]
 name = "wav-ctk"
-version = "0.0.0"
+version = "0.0.1"
 description = "A Tauri App - either for recipes or CTK-4400 support"
 authors = ["Miguel D. Guerrero <migs@mdguerrero.com>"]
 license = ""
