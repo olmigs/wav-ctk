@@ -1,19 +1,19 @@
 {
-    "version": "v0.0.0",
-    "notes": "Initial debugging release (MVP) Tauri@v1.2",
-    "pub_date": "2023-08-10T00:46:02.046Z",
+    "version": "v0.0.1",
+    "notes": "Bugfix: IO permissions, includes logging update",
+    "pub_date": "2023-09-11T14:38:19.735Z",
     "platforms": {
         "darwin-x86_64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTNmV2MrckxyS2VBclR6b1dxUGh2V1NXTGJKa2N4ajJ1bnBmQWQvdW1zSUZmeVBuODZPSjZPaXFPb05FWHI5VEk2S2ljNHEvZ1FSMnpkQUY2MEpxUmVIUkdwS2Y0cFFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjkxNjI2NzQ0CWZpbGU6V2F2ZSBDVEsuYXBwLnRhci5negorK1BKZWZ4TWIzQVRBREYvYmxvK012aGJHczFZZXpUR3VZdzQ5UVZ2Wm9jNTgrSGJpUys5WkIyUi8wOHdjVzhUeDk3VCt6TGZaQU9Ca0FtcDhGcDFCZz09Cg==",
-            "url": "https://github.com/olmigs/wav-ctk/raw/main/release/download/v0.0.0/Wave CTK.app.tar.gz"
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTNmV2MrckxyS1lSRHEyclFUYlYyZTR2TG5Uc3lrbldLMnlua241OGNWSG5MbUdQekpjTnQ5T2lid1JuT1VCUkZvOWxjREJ1ZFJuM0tMV3NXR0d6bWRXa2JJK0l6bWdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk0NDQyMjIzCWZpbGU6V2F2ZSBDVEsuYXBwLnRhci5negp2OThpQUYrVU0zMHhQZnNSV2xHRTVtT1NHRDljRmUzYTQzYUpHNTJHc1ZsOHRKMytDUkNxcjhnOXE3TlNzcGNLZ3hjQmNXWVdaWXR2eVBWOVF4WkxEZz09Cg==",
+            "url": "https://github.com/olmigs/wav-ctk/raw/main/release/download/v0.0.1/Wave CTK.app.tar.gz"
         },
         "darwin-aarch64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTNmV2MrckxyS2RpVjN4NkIzL2krbHFUK25Vb0dwQUo0SVZlMUdFQTQxdzZtQ01SMmFkWm9XRTBIS2NvRnRZTFBwd2k0eTZJYitUcmlLN08rdWRsMmxqTTNROE9ISUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjkxNjI0MDEwCWZpbGU6V2F2ZSBDVEsuYXBwLnRhci5negpUdktIWDhPN3d6WDM0aFJJMnZObU04c2dvZUxSU1NFUk13cEVTdU5mRERiK2ZHRFRwVGFuejczQmtxTldIWFdkOGxMWXN3U3EyMlpKTWdnS2I2eGdCQT09Cg==",
-            "url": "https://github.com/olmigs/wav-ctk/raw/main/release/download/v0.0.0/silicon/Wave CTK.app.tar.gz"
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTNmV2MrckxyS2U4VmFLL0ZvMDVLb3BGRGVTOWsvVHhzblp1YXBPSm4wRjNDbTRubEJmeDdYdUxDM09oTjFLSTFxOGptTkJOcjJsRU5PTU5EWlpxMDBrWGZxVjRpWkFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk0NDQzMDIyCWZpbGU6V2F2ZSBDVEsuYXBwLnRhci5negpZeUNKV1hyY1Q5T05ra0Y2aENWN1pxdytCY2w1SVJOU0loOFBIYzFyWEN4SmlaVUtmazlHR1hZVGk5cEd5MGF6Y01QUXpGcFZhK3JKYlJqS05nZEJBdz09Cg==",
+            "url": "https://github.com/olmigs/wav-ctk/raw/main/release/download/v0.0.1/silicon/Wave CTK.app.tar.gz"
         },
         "windows-x86_64": {
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTNmV2MrckxyS2Vrc3pSbmhIUUw0VWZhdjQzbFk0bkVSUGdzWjZoZmZGWis1V0kzQTcyUCtqUFpKVVpVUnlaZVc1NURYYXAxcDkrWEZudnJGaUpyK25wY2pBMzhISFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjkxNjI2ODI5CWZpbGU6V2F2ZSBDVEtfMC4wLjBfeDY0X2VuLVVTLm1zaS56aXAKWHpzVlVvZlZpT0FmTHJXNnR5WnFmcEl5cTduRjI1STBPMWhoL0NUd3gyQUZWU3JmamdCTGNwRUVVanFlQ3RMQ0V4NDdheWRPL0VFaFNIL2xidkN0Qnc9PQo=",
-            "url": "https://github.com/olmigs/wav-ctk/raw/main/release/download/v0.0.0/Wave CTK_0.0.0_x64_en-US.msi.zip"
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRaTNmV2MrckxyS1pOUStXWFlaM1dWWUpKYThxNTBUZVg3ZS9ZUHFieDhHS0t3akF4NEs4azJPREZ2cmZNK1VzVElrWnU4NlR2N3BEajNBcU0vQytqdmo2WnBGS0Ftamd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk0NDQyMDE0CWZpbGU6V2F2ZSBDVEtfMC4wLjFfeDY0X2VuLVVTLm1zaS56aXAKUkl5V2dyby95dUg5TElTcnZ3ZGRpV1M2Z21EeHRWZHJQVTdIYzFKMmlxbXZCVkc4ZDZKVHl3T3JMa1JVNVhFMEN1SlNMeWV0b0ZUd0MwV3NGTmo4Q1E9PQo=",
+            "url": "https://github.com/olmigs/wav-ctk/raw/main/release/download/v0.0.1/Wave CTK_0.0.1_x64_en-US.msi.zip"
         }
     }
 }
